@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+}
+.head-content {
+  height: 20vh;
+  width: 100%;
+  background-color: blue;
+
+  width: 100%;
+  background: linear-gradient(180deg, blue, white);
+  display: flex;
+  flex-direction: row;
+  min-height: 20vh;
+  justify-content: space-around;
+  gap: 20px;
+  flex: 1 1 auto;
+}
+.head-content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  width: 50%;
+  color: red;
+  flex: 1 1 auto;
+
+  transition: 0.5s;
+  animation: float 3s ease-in-out normal alternate;
+}
+
+.head-content > div:first-child {
+  /* background-color: blue; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  font-style: italic;
+  font-size: 48px;
+}
+.head-content > div > div {
+  /* background-color: blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 24px;
+  flex: 1 1 auto;
+}
+.body-content {
+  height: 80vh;
+  width: 100%;
+}
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.body-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+form {
+  border: 1px solid;
+  min-height: 90%;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.title-div {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.title-div > input {
+  width: 60%;
+}
+.image-div {
+  width: 80%;
+  height: 5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.image-div > input {
+  width: 60%;
+}
+.article-div {
+  width: 80%;
+  height: 60%;
+}
+textarea {
+  /* width: 100%;
+  height: 100%; */
+}
+.checkbox-div {
+  font-size: 24px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* .form-container {
+  background-color: blue;
+} */
+button {
+  border: none;
+  height: 5vh;
+  width: 10%;
+}
+button:hover {
+  background-color: white;
+  border: 1px solid;
+}
+button:active {
+  background-color: lightgrey;
+}
+
+@media (max-width: 768px) {
+  .head-content {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .head-content > div {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .head-content > div:first-child {
+    font-size: 32px;
+    justify-content: center;
+  }
+
+  .head-content > div > div {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  form {
+    width: 90vw;
+    padding: 20px 10px;
+  }
+
+  .title-div,
+  .image-div,
+  .article-div,
+  .checkbox-div {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .title-div > input,
+  .image-div > input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+  }
+
+  .checkbox-div {
+    font-size: 18px;
+    justify-content: flex-start;
+  }
+
+  button {
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+.home-blog-content {
+  min-height: 100vh;
+  border: 1px solid;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(400px, auto));
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+}
+.home-blog-image {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  /* border: 1px solid yellow; */
+}
+.blog {
+  background-color: #dbeafe; /* Light blue */
+  border: 1px solid #6366f1; /* Indigo */
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  font-family: cursive;
+  cursor: pointer;
+}
+.blog:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.blog-description {
+  white-space: nowrap;
+  overflow: hidden;
+  /* //text-overflow : ellipsis is to truncate a long statement to one line */
+  text-overflow: ellipsis;
+  margin: 10px;
+  font-family: cursive;
+}
+.blog-title {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  text-overflow: ellipsis;
+  color: #1e3a8a;
+  margin-left: 2%;
+}
+.blog-date {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.btn-div {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
