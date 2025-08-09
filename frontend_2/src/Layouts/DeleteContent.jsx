@@ -41,7 +41,7 @@ const DeleteContent = () => {
 
   useEffect(() => {
     reFetchBlogs();
-  });
+  }, []);
 
   return (
     <div className="home-blog-content">

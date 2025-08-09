@@ -25,7 +25,7 @@ const EditBlogContent = () => {
         setTitle(blog.title || "");
         setAuthor(blog.author || "");
         setArticle(blog.article || "");
-        setIsPublished(blog.isPublished || "");
+        setIsPublished(Boolean(blog.isPublished));
       } catch (err) {
         console.log(err);
       }
