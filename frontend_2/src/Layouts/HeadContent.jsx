@@ -6,12 +6,24 @@ const HeadContent = ({ headerLink, headerText }) => {
       <div>Blogare</div>
       <div>
         <div>
-          <Link to={headerLink} className="custom-link">
+          <Link
+            to={headerLink}
+            className="custom-link"
+            style={{
+              textDecoration: "none",
+            }}
+          >
             {headerText}
           </Link>
         </div>
         <div>
-          <a href="http://localhost:5173/home" className="custom-link">
+          <a
+            href="http://localhost:5173/home"
+            className="custom-link"
+            style={{
+              textDecoration: "none",
+            }}
+          >
             Home
           </a>
         </div>

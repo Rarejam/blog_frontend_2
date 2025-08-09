@@ -191,7 +191,8 @@ button:active {
   grid-template-rows: repeat(auto-fill, minmax(400px, auto));
   gap: 2rem;
   padding: 1rem;
-  background-color: #f9fafb;
+  /* background-color: #f9fafb; */
+  background-color: white;
 }
 .home-blog-image {
   height: 300px;
@@ -239,4 +240,9 @@ button:active {
   display: flex;
   justify-content: space-around;
   margin: 10px;
+}
+.custom-link:hover {
+  border-bottom: 1px solid;
+  color: white;
+  text-shadow: 3px 3px 10px grey;
 }

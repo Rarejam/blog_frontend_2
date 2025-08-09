@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+
 const BodyContent = () => {
   const [isPublished, setIsPublished] = useState(false);
 
@@ -11,7 +12,7 @@ const BodyContent = () => {
     e.preventDefault();
 
     const form = e.target;
-
+    //because no useState hook we cam use this mwhtod to get the value of eacdh input
     const image = e.target.image.value;
     const title = e.target.title.value;
     const article = e.target.article.value;

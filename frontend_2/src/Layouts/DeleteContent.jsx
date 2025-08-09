@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import interwind from "../assets/interwind.gif";
 
 const DeleteContent = () => {
   const [blogs, setBlogs] = useState([]);
@@ -44,8 +45,27 @@ const DeleteContent = () => {
 
   return (
     <div className="home-blog-content">
-      {!blogs ? (
-        <div>No blogs to view</div>
+      {blogs.length === 0 ? (
+        <div
+          style={{
+            height: "100vh",
+            width: "100vw",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "transparent",
+          }}
+        >
+          <img
+            src={interwind}
+            alt="Loading..."
+            style={{
+              width: "120px",
+              height: "120px",
+              objectFit: "contain",
+            }}
+          />
+        </div>
       ) : (
         blogs.map((blog) => (
           <div key={blog.id} style={{ textDecoration: "none" }}>
